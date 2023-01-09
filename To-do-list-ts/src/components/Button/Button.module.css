@@ -1,0 +1,15 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem;
+    gap: .8rem;
+    
+    width: 10rem;
+    height: 5.2rem;
+    
+    background: var(--dark-blue);
+
+    border-radius: 8px;
+    border: none
+}

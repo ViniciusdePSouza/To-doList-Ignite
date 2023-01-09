@@ -1,32 +1,46 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import './App.css'
+import styles from './App.module.css'
+
+import logo from './assets/logo.svg'
+import Planner from './assets/planner.svg'
+
+import Input from './components/Input/Input'
+import Button from './components/Button/Button'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className={styles.container}>
+      <div className={styles.cover}></div>
+
+      <div className={styles.content}>
+        <div className={styles.titleWrapper}>
+          <img src={logo} alt="" />
+          <h1 className={styles.titleTo}>to</h1>
+          <h1 className={styles.titleDo}>do</h1>
+        </div>
+
+        <section className={styles.addTaskSection}>
+          <Input placeholder='Insira sua tarefa'/>
+          <Button/>
+        </section>
+
+        <section className={styles.taskSection}>
+          <div className={styles.headerTasks}>
+            <div className={styles.createdTaks}><span>Tarefas Criadas</span><span className={styles.counterSpan}>0</span></div>
+            <div className={styles.completedTaks}><span>Tarefas Concluídas</span><span className={styles.counterSpan}>0</span></div>
+          </div>
+        </section>
+
+        <div className={styles.taskTable}>
+          <div className={styles.emptyTable}>
+            <img src={Planner} alt="" />
+            <strong>Você ainda não tem tarefas cadastradas</strong>
+            <p>Crie tarefas e organize seus itens a fazer</p>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
   )
 }

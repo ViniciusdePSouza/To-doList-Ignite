@@ -1,0 +1,157 @@
+.container {
+  background-color: var(--gray-500);
+
+  display: grid;
+  min-height: 100vh;
+
+  position: relative;
+}
+
+.cover {
+  height: 20rem;
+
+  background-color: var(--gray-700);
+}
+
+.content {
+  z-index: 1;
+
+  position: absolute;
+
+  top: 4%;
+  left: 15%;
+
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 4rem 2rem;
+
+  margin: 0 auto;
+}
+
+.content img {
+  margin-right: 1.2rem;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 5.3rem;
+}
+
+.titleTo {
+  font-family: Inter, sans-serif;
+
+  font-size: 4rem;
+  color: var(--blue);
+  line-height: 140%;
+}
+
+.titleDo {
+  font-family: Inter, sans-serif;
+
+  font-size: 4rem;
+  color: var(--dark-purple);
+  line-height: 140%;
+}
+
+.addTaskSection {
+  display: flex;
+
+  width: 80%;
+  gap: .8rem
+}
+
+.taskSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 80%;
+
+  margin-top: 6.4rem;
+}
+
+.headerTasks {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 2.4rem;
+
+}
+
+.createdTaks,
+.completedTaks {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.completedTaks {
+  color: var(--blue)
+}
+
+.createdTaks {
+  color: var(--purple)
+}
+
+.counterSpan {
+  padding: 2px 8px;
+  background-color: var(--gray-300);
+
+  color: var(--white);
+
+  border-radius: 8px;
+}
+
+.taskTable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 80%;
+
+  border-top: 1px solid var(--gray-300);
+  border-radius: 8px;
+}
+
+.emptyTable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 6.4rem;
+}
+
+.emptyTable img {
+  margin-bottom: 1.6rem;
+}
+
+.emptyTable strong {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 140%;
+
+  color: var(--gray-300)
+}
+
+.emptyTable p {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 140%;
+
+  color: var(--gray-300)
+}
