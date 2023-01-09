@@ -4,7 +4,7 @@ import plusIcon from '../../assets/plusIcon.svg'
 
 export function Button(props: any) {
     return (
-        <button className={styles.button}>
+        <button className={styles.button} onClick={props.onClick}>
             Criar
             <img src={plusIcon}/>
         </button>

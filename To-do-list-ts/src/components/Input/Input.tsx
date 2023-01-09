@@ -4,7 +4,7 @@ import logo from './assets/logo.svg'
 
 export function Input(props: any) {
     return (
-        <input className={styles.input} type={props.type} placeholder={props.placeholder} />
+        <input className={styles.input} type={props.type} placeholder={props.placeholder} onChange={props.onChange}/>
     )
 }
 

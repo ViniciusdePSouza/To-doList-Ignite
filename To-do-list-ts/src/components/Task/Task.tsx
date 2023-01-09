@@ -3,6 +3,12 @@ import styles from './Task.module.css'
 import Garbage from '../../assets/garbage.svg'
 
 export function Task(props: any) {
+    
+    function handleDelete(task: string) {
+        task = props.description
+        props.onDelete(task)
+    }
+    
     return (
         <div className={styles.container}>
             <div className={styles.checkboxWrapper}>
@@ -10,7 +16,7 @@ export function Task(props: any) {
                 <label htmlFor="chk"></label>
             </div>
             <p>{props.description}</p>
-            <button>
+            <button onClick={handleDelete}>
                 <img src={Garbage} alt="" />
             </button>
         </div>
