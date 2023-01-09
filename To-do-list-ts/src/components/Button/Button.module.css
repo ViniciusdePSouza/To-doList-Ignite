@@ -11,5 +11,14 @@
     background: var(--dark-blue);
 
     border-radius: 8px;
-    border: none
+    border: none;
+
+    transition: all 0.2s;
+
+    cursor: pointer;
+}
+
+button:disabled{
+    opacity: 0.8;
+    cursor: not-allowed;
 }

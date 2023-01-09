@@ -27,7 +27,7 @@ function App() {
   function deleteTask(taskToDelete: string) {
     const commentsWithoutDeleteOne = tasks.filter(tasks => tasks !== taskToDelete)
     
-    if (tasks.length == 0) {
+    if (tasks.length = 0) {
       setIsEmpty((state) => {
         state = true
         return state
@@ -43,9 +43,7 @@ function App() {
     })
   }
 
-  function handleInvalidComment(event: ChangeEvent<HTMLInputElement>) {
-    event.target.setCustomValidity('Esse campo é obrigatório para adicionar uma nova tarefa à sua agenda')
-  }
+  const isButtonDisable = newTask.length === 0
 
   return (
     <div className={styles.container}>
@@ -59,8 +57,8 @@ function App() {
         </div>
 
         <section className={styles.addTaskSection}>
-          <Input placeholder='Insira sua tarefa' onChange={handleNewTask} required onInvalid={handleInvalidComment}/>
-          <Button onClick={handleClick} />
+          <Input placeholder='Insira sua tarefa' onChange={handleNewTask}/>
+          <Button onClick={handleClick} isDisabled={isButtonDisable}/>
         </section>
 
         <section className={styles.taskSection}>
