@@ -1,0 +1,63 @@
+.container {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: var(--gray-600);
+
+    border: 1px solid var(--gray-400);
+    border-radius: 8px;
+
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+
+    padding: 1.6rem 5.2rem;
+}
+
+.container p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 140%;
+
+    color: var(--gray-100)
+}
+
+.container button {
+    background-color: transparent;
+
+    height: 4rem;
+    width: 4rem;
+
+    border: none;
+}
+
+.checkboxWrapper input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+}
+.checkboxWrapper input[type=checkbox]:active {
+    background-color: var(--purple);
+}
+
+.checkboxWrapper {
+    Width: 1.75rem; 
+    Height: 1.75rem;
+
+    border-radius: 50%;
+
+    border: 2px solid var(--blue);
+    position: relative;
+}
+
+.checkboxWrapper input {
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

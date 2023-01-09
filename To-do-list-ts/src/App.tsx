@@ -5,8 +5,10 @@ import styles from './App.module.css'
 import logo from './assets/logo.svg'
 import Planner from './assets/planner.svg'
 
-import Input from './components/Input/Input'
-import Button from './components/Button/Button'
+import { Input } from './components/Input/Input'
+import { Button } from './components/Button/Button'
+import { Task } from './components/Task/Task'
+
 
 function App() {
 
@@ -34,10 +36,14 @@ function App() {
         </section>
 
         <div className={styles.taskTable}>
-          <div className={styles.emptyTable}>
+          <div className={styles.hide}> {/* empity table */}
             <img src={Planner} alt="" />
             <strong>Você ainda não tem tarefas cadastradas</strong>
             <p>Crie tarefas e organize seus itens a fazer</p>
+          </div>
+
+          <div className={styles.tasks}>
+            <Task description='Tenho que ir à academia'/>
           </div>
         </div>
       </div>

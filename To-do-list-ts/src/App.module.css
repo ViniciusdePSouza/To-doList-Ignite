@@ -1,3 +1,7 @@
+
+.hide{
+  display: none
+}
 .container {
   background-color: var(--gray-500);
 
@@ -154,4 +158,14 @@
   line-height: 140%;
 
   color: var(--gray-300)
+}
+
+.tasks{
+ width: 100%; 
+ 
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+ gap: 1.2rem;
 }
