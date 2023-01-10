@@ -63,8 +63,8 @@ function App() {
 
         <section className={styles.taskSection}>
           <div className={styles.headerTasks}>
-            <div className={styles.createdTaks}><span>Tarefas Criadas</span><span className={styles.counterSpan}>0</span></div>
-            <div className={styles.completedTaks}><span>Tarefas Concluídas</span><span className={styles.counterSpan}>0</span></div>
+            <div className={styles.createdTaks}><span>Tarefas Criadas</span><span className={styles.counterSpan}>{tasks.length}</span></div>
+            <div className={styles.completedTaks}><span>Tarefas Concluídas</span><span className={styles.counterSpan}>{tasks.length}</span></div>
           </div>
         </section>
 
